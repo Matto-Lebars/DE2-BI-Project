@@ -1,0 +1,30 @@
+version: '3.3'
+name: de2-bi-project
+
+services:
+  ms-sql:
+    container_name: mssql
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      # user is 'sa' by default
+      - "SA_PASSWORD=Suc€MonGland!"
+      - "ACCEPT_EULA=Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./sql/ms-sql/TDERP.bak:/var/opt/mssql/TDERP.bak
+    hostname: mssql
+
+  mariadb:
+    container_name: mariadb
+    image: mariadb:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: de2-bi-project
+      MYSQL_USER: connard
+      MYSQL_PASSWORD: VieillePute
+    # volumes:
+      # - ./sql/mariadb/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3306:3306"
