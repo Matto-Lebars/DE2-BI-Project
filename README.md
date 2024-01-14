@@ -22,3 +22,9 @@ Then connect to the databases with the following credentials:
   - **Port:** 3306
 
 Execute the following command to create the ms sql database: [ObjetsInit.sql](sql%2Fms-sql%2FObjetsInit.sql)
+
+## Package Database API
+
+### Requirements
+
+Requirements are listed in the [requirements.txt](requirements.txt) file. Run the following command to install them: `pip install -r requirements.txt`
