@@ -3,7 +3,7 @@
 
 ## Sales
  
-Composé aussi de : 
+Composé de : 
 - SalesOrderheaderSalesReason
 
 | Column | FROM | type | FK |
@@ -28,6 +28,9 @@ Composé aussi de :
 | CreditCardID | SalesOrderDetails | int | CreditCard |
 
 ## SalesDetails
+
+composé de : 
+- SalesDetails
 
 | Column | FROM | type | FK |
 | ---- | ---- | ---- | ---- |
@@ -69,6 +72,7 @@ composé de :
 
 
 ## Special Offer
+
 composé de:
 - Special Offer
 - Special Offer Product
@@ -101,7 +105,7 @@ composé de :
 
 
 
-Ca dégage : 
+Table inutile : 
 
 - CountryRegionCurrency 
 - Currency
