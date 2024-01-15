@@ -6,7 +6,7 @@ Settings for the ETL process
 MS_SQL_DB_CONFIG = {
     'host': 'localhost:1433',
     'user': 'sa',
-    'password': 'Suc€MonGland!',
+    'password': 'T€l€c0mste!',
     'database': 'TDERP',
     'driver': 'ODBC+Driver+17+for+SQL+Server'
 }
@@ -18,8 +18,8 @@ MS_SQL_URI = (
 # Define the MariaDB connection parameters
 MARIA_DB_CONFIG = {
     'host': 'localhost',
-    'user': 'connard',
-    'password': 'VieillePute',
+    'user': 'project',
+    'password': 'Telecom',
     'database': 'de2-bi-project',
 }
 

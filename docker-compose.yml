@@ -7,7 +7,7 @@ services:
     image: "mcr.microsoft.com/mssql/server"
     environment:
       # user is 'sa' by default
-      - "SA_PASSWORD=Suc€MonGland!"
+      - "SA_PASSWORD=T€l€c0mste!"
       - "ACCEPT_EULA=Y"
     ports:
       - "1433:1433"
@@ -22,8 +22,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: de2-bi-project
-      MYSQL_USER: connard
-      MYSQL_PASSWORD: VieillePute
+      MYSQL_USER: project
+      MYSQL_PASSWORD: Telecom
     # volumes:
       # - ./sql/mariadb/init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
